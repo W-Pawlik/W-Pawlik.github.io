@@ -1,0 +1,60 @@
+@import "./variables";
+@import "./coreStyle";
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 90%;
+    justify-content: space-around;
+    padding: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#navLocation2{
+    grid-column: 1/ span 2;
+    grid-row: 1;
+}
+
+#form{
+    grid-column: 1/ span2;
+    grid-row: 2;
+    justify-self: center;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+}
+
+.field{
+    margin: 20px;
+}
+
+button {
+    position: relative;
+    left: 200px;
+    top: 40px;
+    display: block;
+    background-color: $themeColor;
+    width: 100px;
+    height: 45px;
+    color: $textColor;
+}
+button:hover{
+    background-color: rgb(224, 105, 105);
+}
+button:active{
+    background-color: $themeColor;
+}
+.link{
+    color: $themeColor; 
+    &:hover{
+        color: rgb(224, 105, 105);
+        text-decoration: underline dotted;
+    }
+    &:active{
+        color: rgb(81, 78, 243);
+    }
+}
+
+
+

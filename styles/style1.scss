@@ -1,0 +1,68 @@
+@import "./variables";
+@import "./coreStyle";
+
+
+.mainContainer{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10% 75%;
+    justify-content: space-around;
+    padding: 10px;
+    height: 100vh;
+    width: 100vw;
+}
+
+#navLocation1{
+    grid-column: 1/ span 2;
+}
+
+#imgContainer {
+    grid-column: 1;
+    grid-row: 2;
+    margin-left: -10px;
+    height: 200px;
+    width: 50%;
+    justify-self: center;
+    padding: 20px;
+    #logo {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+#textContainer{
+    grid-column: 2;
+    grid-row: 2;
+    margin: 10px;
+    margin-left: 40px;
+    width: 50%;
+    height: 200px;
+    padding: 20px;
+    justify-self: center;
+    button {
+        display: block;
+        background-color: $themeColor;
+        width: 150px;
+        height: 60px;
+        color: $textColor;
+    }
+    button:hover{
+        background-color: rgb(224, 105, 105);
+    }
+    button:active{
+        background-color: $themeColor;
+    }
+    .link{
+        color: $themeColor; 
+        &:hover{
+            color: rgb(224, 105, 105);
+            text-decoration: underline dotted;
+        }
+        &:active{
+            color: rgb(81, 78, 243);
+        }
+    }
+}
+
+
+

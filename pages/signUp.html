@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Klub Muay Thai w Bielanach">
+    <meta name="keywords"
+        content="MuayThaiClub, MuayThai, Bielany, Sztuki Walki, MuayThaiWrocław, MuayThaiBiealny, justGym">
+    <meta name="author" content="Wojtek Pawlik">
+    <link rel="stylesheet" href="../styles/styleSignUp.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>MT Bielany Club- formularz</title>
+
+</head>
+
+<body>
+    <div class="mainContainer">
+        <nav class="ui three item menu" id="navLocation2">
+            <a class="item" href="../pages/aboutUs.html">O nas</a>
+            <a class="item" href="../pages/signUp.html">Zapisz się</a>
+            <a class="item" href="../pages/contact.html">Kontakt</a>
+        </nav>
+        <form id="form">
+            <label class="field"> Imię: <input type="text" id="nameInput" name="name" placeholder="Jak masz na imię?"></label>
+            <label class="field"> Nazwisko: <input type="text" name="surname"
+                    placeholder="Jak masz na nazwisko?"></label><br>
+            <label class="field"> Wiek: <input type="number" name="age" step="1" placeholder="Ile masz lat?"></label>
+            <label class="field">Adres e-mail: <input type="email" name="email" placeholder="adres@domena"></label><br>
+            <label class="field">Numer telefonu: <input type="tel" name="telephonNum"></label><br>
+            <label class="field" for="choice1">Jak oceniasz swój poziom?</label>
+            <select id="choice1" name="choice1">
+                <option value="begginer">Początkujący</option>
+                <option value="intermediate">Średnio-zaawansowany</option>
+                <option value="advanced">Zaawansowany</option>
+            </select><br>
+            <button>Wyślij formularz</button>
+        </form>
+
+        <div class="homeButtonContainer">
+            <a href="../index.html"><img class="homeButtonIcon" src="../pictures/home.png"></a>
+        </div>
+    </div>
+    <script src="./scripts/script2.js"></script>
+</body>
+
+</html>
